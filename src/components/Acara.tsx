@@ -22,7 +22,7 @@ function addToCalendar(title: string, location: string) {
     "BEGIN:VEVENT\n" +
     `SUMMARY:${title}\n` +
     `LOCATION:${location}\n` +
-    "DESCRIPTION:Pernikahan Raditya & Kirana\n" +
+    "DESCRIPTION:Pernikahan Fulan & Fulana\n" +
     "DTSTART:20260824T010000Z\n" +
     "DTEND:20260824T070000Z\n" +
     "END:VEVENT\n" +
@@ -32,7 +32,7 @@ function addToCalendar(title: string, location: string) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.setAttribute("download", "The-Wedding-Raditya-Kirana.ics");
+  link.setAttribute("download", "The-Wedding-Fulan-Fulana.ics");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -70,7 +70,7 @@ function EventCard({ badge, badgeClass, icon, iconClass, date, time, venue, addr
       </div>
       <div className="pt-space-md flex flex-wrap gap-space-sm">
         <a
-          className="inline-flex items-center gap-2 px-space-md py-2 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary-container transition-colors"
+          className="inline-flex items-center gap-2 px-space-md py-2 bg-action text-white rounded-lg font-label-sm text-label-sm uppercase tracking-wider hover:bg-action/90 transition-colors"
           href="https://maps.google.com"
           rel="noopener noreferrer"
           target="_blank"
@@ -79,7 +79,7 @@ function EventCard({ badge, badgeClass, icon, iconClass, date, time, venue, addr
           <span>Buka Google Maps</span>
         </a>
         <button
-          className="inline-flex items-center gap-2 px-space-md py-2 bg-surface-container-high text-primary rounded-lg font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-container-highest transition-colors cursor-pointer"
+          className="inline-flex items-center gap-2 px-space-md py-2 bg-surface-container-high text-action rounded-lg font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-container-highest transition-colors cursor-pointer"
           type="button"
           onClick={() => addToCalendar(calendarTitle, venue)}
         >
@@ -139,7 +139,7 @@ export default function Acara() {
             time="Pukul 08:00 - 10:00 WIB"
             venue="Masjid Agung Al-Azhar"
             address="Jl. Sisingamangaraja No.1, Kebayoran Baru, Jakarta Selatan"
-            calendarTitle="Akad Nikah Raditya & Kirana"
+            calendarTitle="Akad Nikah Fulan & Fulana"
           />
           <EventCard
             badge="Resepsi Pernikahan"
@@ -150,7 +150,7 @@ export default function Acara() {
             time="Pukul 11:00 - 14:00 WIB"
             venue="Grand Ballroom Hotel Mulia Senayan"
             address="Jl. Asia Afrika, Gelora, Tanah Abang, Jakarta Pusat"
-            calendarTitle="Resepsi Pernikahan Raditya & Kirana"
+            calendarTitle="Resepsi Pernikahan Fulan & Fulana"
           />
         </div>
 

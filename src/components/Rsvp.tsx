@@ -96,7 +96,7 @@ export default function Rsvp({ showToast }: Props) {
                       key={opt.value}
                       className={`flex flex-col items-center justify-center p-2 rounded-lg cursor-pointer transition-colors text-center ${
                         attendance === opt.value
-                          ? "bg-primary text-on-primary"
+                          ? "bg-action text-white"
                           : "bg-surface-container-low"
                       }`}
                     >
@@ -142,7 +142,7 @@ export default function Rsvp({ showToast }: Props) {
                 <textarea
                   className="w-full px-space-md py-2.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20"
                   id="guest-message"
-                  placeholder="Tuliskan doa restu untuk Raditya & Kirana..."
+                  placeholder="Tuliskan doa restu untuk Fulan & Fulana..."
                   required
                   rows={4}
                   value={message}
@@ -150,7 +150,7 @@ export default function Rsvp({ showToast }: Props) {
                 />
               </div>
               <button
-                className="w-full py-3 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-3 bg-action text-white rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-action/90 transition-colors shadow-sm flex items-center justify-center gap-2 cursor-pointer"
                 type="submit"
               >
                 <span className="material-symbols-outlined text-[18px]">send</span>

@@ -32,12 +32,12 @@ export default function CoverOverlay({ onOpen }: Props) {
     >
       <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-surface/40 pointer-events-none" />
       <div className="relative z-10 max-w-xl mx-auto px-gutter text-center flex flex-col items-center">
-        <div className="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-md shadow-sm">
+        <div className="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high text-action font-label-sm text-label-sm uppercase tracking-widest mb-space-md shadow-sm">
           <span className="material-symbols-outlined !text-[16px] text-secondary">favorite</span>
           <span>The Wedding Celebration</span>
         </div>
-        <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight mb-space-xs">
-          Raditya &amp; Kirana
+        <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-navy tracking-tight mb-space-xs">
+          Fulan &amp; Fulana
         </h1>
         <p className="font-body-md text-body-md text-on-surface-variant mb-space-lg">
           Sabtu, 24 Agustus 2024 • Jakarta
@@ -45,7 +45,7 @@ export default function CoverOverlay({ onOpen }: Props) {
         <div className="relative w-48 h-64 md:w-56 md:h-72 rounded-full overflow-hidden shadow-2xl mb-space-lg">
           <img
             className="w-full h-full object-cover"
-            alt="Potret pasangan mempelai Raditya dan Kirana"
+            alt="Potret pasangan mempelai muslim Fulan dan Fulana dalam busana pernikahan islami"
             src={IMAGES.cover}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
@@ -60,7 +60,7 @@ export default function CoverOverlay({ onOpen }: Props) {
           </p>
         </div>
         <button
-          className="group inline-flex items-center gap-space-sm px-space-lg py-3.5 bg-primary text-on-primary rounded-full font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary-container transition-all shadow-xl hover:-translate-y-0.5 cursor-pointer"
+          className="group inline-flex items-center gap-space-sm px-space-lg py-3.5 bg-action text-white rounded-full font-label-lg text-label-lg uppercase tracking-wider hover:bg-action/90 transition-all shadow-xl hover:-translate-y-0.5 cursor-pointer"
           type="button"
           onClick={handleOpen}
         >

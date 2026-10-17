@@ -26,7 +26,7 @@ function BankCard({ bank, number, numberRaw, owner, onCopy, copied }: BankCardPr
         <p className="font-body-sm text-body-sm text-on-surface-variant">a.n. {owner}</p>
       </div>
       <button
-        className="w-full py-2.5 bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary transition-colors rounded-lg font-label-sm text-label-sm uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer"
+        className="w-full py-2.5 bg-surface-container-low text-action hover:bg-action hover:text-white transition-colors rounded-lg font-label-sm text-label-sm uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer"
         type="button"
         onClick={() => onCopy(numberRaw)}
       >
@@ -72,7 +72,7 @@ export default function Gift({ showToast }: Props) {
               bank="BCA"
               number="5420 8912 34"
               numberRaw="5420891234"
-              owner="Raditya Pratama"
+              owner="Fulan Pratama"
               onCopy={handleCopy}
               copied={copiedNumber === "5420891234"}
             />
@@ -80,7 +80,7 @@ export default function Gift({ showToast }: Props) {
               bank="MANDIRI"
               number="1370 0192 8831"
               numberRaw="137001928831"
-              owner="Kirana Larasati"
+              owner="Fulana Larasati"
               onCopy={handleCopy}
               copied={copiedNumber === "137001928831"}
             />
@@ -88,7 +88,7 @@ export default function Gift({ showToast }: Props) {
 
           <div className="text-center">
             <button
-              className="inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors font-label-lg text-label-lg uppercase tracking-wider shadow-sm cursor-pointer"
+              className="inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-action text-white hover:bg-action/90 transition-colors font-label-lg text-label-lg uppercase tracking-wider shadow-sm cursor-pointer"
               type="button"
               onClick={() => setQrisOpen(true)}
             >
@@ -149,7 +149,7 @@ export default function Gift({ showToast }: Props) {
               Dapat di-scan melalui BCA Mobile, GoPay, OVO, ShopeePay, Maupun Livin' by Mandiri.
             </p>
             <button
-              className="w-full py-2.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm uppercase tracking-wider cursor-pointer"
+              className="w-full py-2.5 bg-action text-white rounded-lg font-label-sm text-label-sm uppercase tracking-wider cursor-pointer"
               type="button"
               onClick={() => setQrisOpen(false)}
             >

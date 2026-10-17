@@ -14,8 +14,8 @@ export default function Hero() {
           <span className="h-[1px] w-12 bg-secondary-fixed-dim" />
         </div>
         <p className="font-headline-lg text-headline-lg text-on-surface-variant italic mb-2">The Wedding of</p>
-        <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight mb-space-md">
-          Raditya &amp; Kirana
+        <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-navy tracking-tight mb-space-md">
+          Fulan &amp; Fulana
         </h2>
         <div className="inline-flex flex-wrap justify-center items-center gap-3 px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg mb-space-xl shadow-sm">
           <span className="material-symbols-outlined text-secondary text-[18px]">calendar_today</span>

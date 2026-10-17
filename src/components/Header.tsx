@@ -10,7 +10,7 @@ export default function Header({ activeSection }: Props) {
       <div className="h-20 max-w-7xl mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
         <div className="flex items-center gap-space-sm">
           <span className="material-symbols-outlined text-primary text-[28px]">eco</span>
-          <span className="font-headline-md text-headline-md text-primary tracking-tight">R &amp; K</span>
+          <span className="font-headline-md text-headline-md text-navy tracking-tight">F &amp; F</span>
         </div>
         <nav className="hidden md:flex items-center gap-1.5 p-1.5 bg-surface-container-low rounded-full">
           {NAV_LINKS.map((link) => (
@@ -20,7 +20,7 @@ export default function Header({ activeSection }: Props) {
               aria-current={activeSection === link.id ? "page" : undefined}
               className={
                 activeSection === link.id
-                  ? "px-space-md py-1.5 transition-colors bg-primary-container text-on-primary font-semibold rounded-full shadow-sm font-label-lg text-label-lg"
+                  ? "px-space-md py-1.5 transition-colors bg-action text-white font-semibold rounded-full shadow-sm font-label-lg text-label-lg"
                   : "px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
               }
             >

@@ -23,7 +23,7 @@ function ProfileCard({ image, alt, role, name, parents, childOrder, instagram }:
       <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold mb-1">
         {role}
       </span>
-      <h3 className="font-headline-md text-headline-md text-primary mb-2">{name}</h3>
+      <h3 className="font-headline-md text-headline-md text-navy mb-2">{name}</h3>
       <p className="font-body-sm text-body-sm text-on-surface-variant mb-space-md max-w-xs">
         {childOrder} dari pasangan
         <br />
@@ -31,7 +31,7 @@ function ProfileCard({ image, alt, role, name, parents, childOrder, instagram }:
         <strong className="text-on-surface">{parents[1]}</strong>
       </p>
       <a
-        className="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm"
+        className="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-surface-container-high text-action hover:bg-action hover:text-white transition-colors font-label-sm text-label-sm"
         href="https://instagram.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -62,21 +62,21 @@ export default function Mempelai() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center">
           <ProfileCard
             image={IMAGES.groom}
-            alt="Potret mempelai pria Raditya Pratama"
+            alt="Potret mempelai pria muslim Fulan Pratama dalam busana koko tradisional"
             role="Mempelai Pria"
-            name="Raditya Pratama, S.T."
+            name="Fulan Pratama, S.T."
             childOrder="Putra pertama"
             parents={["Bapak Bambang Hariyanto", "Ibu Sri Wahyuni"]}
-            instagram="@raditya.pratama"
+            instagram="@fulan.pratama"
           />
           <ProfileCard
             image={IMAGES.bride}
-            alt="Potret mempelai wanita Kirana Larasati"
+            alt="Potret mempelai wanita muslimah Fulana Larasati berhijab anggun"
             role="Mempelai Wanita"
-            name="Kirana Larasati, S.Ds."
+            name="Fulana Larasati, S.Ds."
             childOrder="Putri bungsu"
             parents={["Bapak Hendra Kusuma", "Ibu Maya Anggraini"]}
-            instagram="@kirana.larasati"
+            instagram="@fulana.larasati"
           />
         </div>
       </div>

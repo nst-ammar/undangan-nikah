@@ -14,7 +14,7 @@ export default function MobileNav({ activeSection }: Props) {
           aria-current={activeSection === link.id ? "page" : undefined}
           className={
             activeSection === link.id
-              ? "px-2 py-1 text-primary font-semibold font-label-sm text-label-sm"
+              ? "px-2 py-1 text-action font-semibold font-label-sm text-label-sm"
               : "px-2 py-1 font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface"
           }
         >

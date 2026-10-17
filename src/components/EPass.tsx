@@ -46,7 +46,7 @@ export default function EPass() {
               <h4 className="font-headline-sm text-headline-sm text-on-surface">Dimas &amp; Partner</h4>
               <div className="text-body-sm font-body-sm text-on-surface-variant space-y-0.5 pt-1">
                 <p>
-                  ID Tamu: <strong className="text-on-surface">RK-2024-0824-042</strong>
+                  ID Tamu: <strong className="text-on-surface">FF-2024-0824-042</strong>
                 </p>
                 <p>
                   Sesi Kehadiran: <strong className="text-on-surface">Sesi 1 (11.00 - 12.30 WIB)</strong>

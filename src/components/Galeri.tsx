@@ -22,7 +22,7 @@ export default function Galeri() {
             <div className="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex flex-col items-center justify-center text-center p-space-md transition-opacity group-hover:bg-primary/30">
               <button
                 aria-label="Play Teaser Video"
-                className="w-16 h-16 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-xl hover:scale-110 transition-transform mb-space-sm cursor-pointer"
+                className="w-16 h-16 rounded-full bg-surface-container-lowest/90 text-action flex items-center justify-center shadow-xl hover:scale-110 transition-transform mb-space-sm cursor-pointer"
                 type="button"
               >
                 <span className="material-symbols-outlined icon-filled text-[36px]">play_arrow</span>
